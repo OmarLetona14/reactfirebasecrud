@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import './firebase';
 import './App.css';
+import Links from './components/Links'
+import LinkForm from './components/LinkForm';
+import 'bootswatch/dist/lux/bootstrap.min.css';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className="text-center p-4">Welcome</h1>
+      <hr />
+      <div className="container">
+        <div className="row">
+          <div className="col-md-12">
+            <Links></Links>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-md-12">
+            <LinkForm></LinkForm>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
